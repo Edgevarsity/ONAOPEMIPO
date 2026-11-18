@@ -19,15 +19,18 @@ a:hover {
 }
 
 #banner {
-  background: #F6F6F6 url('../img/banner.jpg') no-repeat top left;
+  background: #e2eadb;
+  color: #244438;
+  text-align: center;
+  line-height: 55px;
+  font-weight: 700;
   height: 55px;
-  background-size: 1920px;
   min-width: 1000px;
   display: block;
 }
 
 header {
-  background-color: #232f3e;
+  background-color: #244438;
   height: 99px;
 }
 
@@ -58,34 +61,18 @@ header {
 }
 
 #nav-logo .nav-logo-link {
-  background: transparent url('../img/logo.png') no-repeat top left;
-  background-size: 102px;
-  width: 192px;
-  height: 32px;
-  display: block;
-}
-
-#nav-logo .nav-logo-tagline {
-  color: #48a3c6;
-  position: absolute;
-  top: 31px;
-  left: 93px;
-  font-size: 11px;
-  line-height: 11px;
-  font-family: arial, sans-serif;
+  background: url('../img/studio-market.svg') no-repeat left center / 32px;
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  padding-left: 40px;
+  color: #fff;
+  font-size: 17px;
   font-weight: 700;
 }
 
-#nav-logo .nav-logo-tagline:hover {
-  color: #ffffff;
-}
-
 #nav-holiday {
-  top: 9px;
-  position: relative;
-  background-image: url('../img/fathers_day.jpg');
-  width: 400px;
-  height: 39px;
+  display: none;
 }
 
 #nav-holiday a {
@@ -397,7 +384,7 @@ h3 {
   width: 100%;
 }
 
-#products #amazon-basics img {
+#products #market-essentials img {
   max-width: 151px;
 }
 
@@ -473,7 +460,7 @@ footer ul {
 }
 
 footer .middle {
-  background: #232f3e;
+  background: #244438;
 }
 
 footer .middle h3 {
@@ -489,8 +476,8 @@ footer .middle li {
 }
 
 footer .middle .logo {
-  background: transparent url('../img/logo.png') no-repeat 0 0;
-  background-size: 76px;
+  background: transparent url('../img/studio-market.svg') no-repeat center;
+  background-size: contain;
   width: 76px;
   height: 23px;
   display: block;
@@ -575,3 +562,17 @@ footer .bottom a span {
   color: #999;
   font-size: 10px;
 }
+
+.image-unavailable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 75px;
+  padding: 8px;
+  background: #e9ece6;
+  color: #37473e;
+  text-align: center;
+}
+
+.carousel .image-unavailable { min-height: 180px; }
+#products .thumbnail .image-unavailable { width: 110px; }
